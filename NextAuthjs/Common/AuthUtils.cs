@@ -26,8 +26,7 @@ public static class AuthUtils
             headerToken = authHeader.Substring("Bearer ".Length).Trim();
         }
 
-        context.Token = cookieToken ?? urlToken ?? headerToken ?? context.Token;
-        return Task.CompletedTask;*/
+        context.Token = cookieToken ?? urlToken ?? headerToken ?? context.Token;*/
         return Task.CompletedTask;
     }
 }

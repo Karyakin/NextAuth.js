@@ -31,7 +31,7 @@ namespace NextAuthjs
                 .AddJwtBearer(options =>
                 {
                     // You need to set this to the same value as the one in ```[...nextauth].ts``` as shown above
-                    var signingKey = this.Configuration["JWTSigningKeyBase64UrlEncoded"];
+                    var signingKey = Configuration["JWTSigningKeyBase64UrlEncoded"];
 
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
@@ -39,7 +39,8 @@ namespace NextAuthjs
                         RequireSignedTokens = true,
 
                         // Note here we use Base64Url.Decode
-                        IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
+                        //IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
+                        IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode("0J/RgNC40LLQtdGC")),
 
                         ValidateIssuer = false,
 
