@@ -32,5 +32,6 @@ public static class Base64Url
 
         var converted = Convert.FromBase64String(output); // Standard base64 decoder
         return converted;
+        //return new byte[4];
     }
 }

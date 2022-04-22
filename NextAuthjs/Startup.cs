@@ -25,22 +25,22 @@ namespace NextAuthjs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            IdentityModelEventSource.ShowPII = true;
+            //IdentityModelEventSource.ShowPII = true;
             services
                 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
                     // You need to set this to the same value as the one in ```[...nextauth].ts``` as shown above
-                    var signingKey = Configuration["JWTSigningKeyBase64UrlEncoded"];
+                    //var signingKey = Configuration["JWTSigningKeyBase64UrlEncoded"];
+                    var signingKey ="IRKSp851HZlq/OzQ/u+hcbQDyXGYEmF+1kqoqMpygqU=";
 
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        ValidateIssuerSigningKey = true,
-                        RequireSignedTokens = true,
+                        ValidateIssuerSigningKey = false,
+                        RequireSignedTokens = false,
 
                         // Note here we use Base64Url.Decode
-                        //IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
-                        IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode("0J/RgNC40LLQtdGC")),
+                       IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
 
                         ValidateIssuer = false,
 
@@ -51,6 +51,8 @@ namespace NextAuthjs
                         RequireExpirationTime = true,
                         ClockSkew = new TimeSpan(0, 5, 0),
                     };
+                    
+                    options.RequireHttpsMetadata = false;
 
                     options.Events = new JwtBearerEvents
                     {
@@ -81,6 +83,7 @@ namespace NextAuthjs
 
             app.UseRouting();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
