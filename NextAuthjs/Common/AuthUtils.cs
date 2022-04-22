@@ -8,6 +8,7 @@ public static class AuthUtils
 {
     public static Task ExtractToken(MessageReceivedContext rawContext)
     {
+        var test = rawContext.Token;
         /*var context = rawContext.RequireNotNull(paramName: "context");
 
         var cookieToken = 

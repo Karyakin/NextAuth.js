@@ -39,8 +39,7 @@ namespace NextAuthjs
                         RequireSignedTokens = true,
 
                         // Note here we use Base64Url.Decode
-                        //IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
-                        IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode("0J/RgNC40LLQtdGC")),
+                       IssuerSigningKey = new SymmetricSecurityKey(Base64Url.Decode(signingKey)),
 
                         ValidateIssuer = false,
 

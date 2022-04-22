@@ -17,7 +17,7 @@ public static class Base64Url
 
     public static byte[] Decode(string input)
     {
-        var output = input;
+        /*var output = input;
         output = output.Replace('-', '+'); // 62nd char of encoding
         output = output.Replace('_', '/'); // 63rd char of encoding
 
@@ -30,7 +30,8 @@ public static class Base64Url
             default: throw new ArgumentOutOfRangeException("input", "Illegal base64url string!");
         }
 
-        var converted = Convert.FromBase64String(output); // Standard base64 decoder
-        return converted;
+        var converted = Convert.FromBase64String(output); // Standard base64 decoder*/
+        //return converted;
+        return new byte[4];
     }
 }
