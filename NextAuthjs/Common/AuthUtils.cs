@@ -19,12 +19,13 @@ public static class AuthUtils
 
         string authHeader = context.Request.Headers["UserToken"]; //// Here we are using string instead of var on purpose
 
+        headerToken = authHeader;
         if (authHeader != null && authHeader.StartsWith("Bearer "))
         {
             headerToken = authHeader.Substring("Bearer ".Length).Trim();
         }
 
-        context.Token = cookieToken ?? urlToken ?? authHeader ?? context.Token;
+        context.Token = cookieToken ?? headerToken ?? urlToken ?? authHeader ?? context.Token;
         return Task.CompletedTask;
     }
 }

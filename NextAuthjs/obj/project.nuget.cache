@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/HKMgitWEGWwWGXPz3vmuCa8bqGtlu0vDP5H91lgKWa5EAej0l3/AdITqtkLZomMBpZee635Zn1vn2Xsvb2Txg==",
+  "dgSpecHash": "1RqZXQoYW6PcoDDjnID+S3TqhiDAjpfrcrjT8iHfgSRNA3tm811iPQPYcoUI5z6cNLGjIVs0yJ+wYDZmptjXPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
+  "projectFilePath": "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\37544\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.4\\microsoft.aspnetcore.authentication.jwtbearer.6.0.4.nupkg.sha512",
     "C:\\Users\\37544\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

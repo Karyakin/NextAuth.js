@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj": {}
+    "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj": {
+    "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
+        "projectUniqueName": "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
         "projectName": "NextAuthjs",
-        "projectPath": "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
+        "projectPath": "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\NextAuthjs.csproj",
         "packagesPath": "C:\\Users\\37544\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\37544\\Projects\\simple_next_auth\\backend\\NextAuthjs\\NextAuthjs\\obj\\",
+        "outputPath": "C:\\Users\\37544\\Projects\\NextAuthjs\\NextAuthjs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
